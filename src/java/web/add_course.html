@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <style type="text/css">
+            
+             .btntheme
+        {
+            width:150px;
+            height:30px;
+            border-radius:30px;
+            border-color:orange;
+            font-size:20px;
+            background-color:white;
+            color:black;
+        }
+         .texttheme
+        {
+            width:250px;
+            height:30px;
+            border-radius:30px;
+            border-color:black;
+        }
+         .bartheme
+        {
+            font-size:20px;
+            border-radius:30px;
+            background-color:rgba(255,255,255,0.5);
+            border:solid;
+            border-color:blue;
+        }
+        </style>
+        
+        
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body background="exam.jpg" >
+        
+        
+        <form action="Course">
+            <table align="left" cellspacing='25' class='bartheme'>
+                <tr align='center' bgcolor='pink' stlye='border-radius:30px'>
+                    <td colspan="2" style="border-radius:30px"> Course Details</td>   
+                </tr> 
+
+        <tr>
+            <td>
+        Course Name <input type="text" name="cname" class="texttheme">
+             </td>
+        </tr>
+        <tr>
+            <td>
+        Price <input type="text" name="price" class="texttheme">
+             </td>
+        </tr>
+        
+        <tr>
+            <td>
+        Syllabus <input type="text" name="syllabus" class="texttheme">
+             </td>
+        </tr>
+        
+        <tr>
+            <td>
+        faculty Name <input type="text" name="fname" class="texttheme">
+             </td>
+        </tr>
+        
+        <tr>
+            <td>
+       Higher Qualification <input type="text" name="qualification" class="texttheme">
+             </td>
+        </tr>
+        
+        <tr>
+            <td>
+       Faculty Experience <input type="text" name="fexperience" class="texttheme">
+             </td>
+        </tr>
+        
+        <tr align="center">
+                 <td colspan="2">
+                    <input type="submit" value="ADD" class='btntheme' >
+                 
+                   
+                 </td>
+
+            </table>       
+        </form>
+        
+        <form action="action_file_upload.jsp" method="post"   enctype="multipart/form-data">
+          <table  align="right" border="2" >       
+         <input type="file" name="file" >    
+         <br>
+         <input type="submit" align="center" value="Upload File" class="btntheme" style="color:red" >  
+                </table>
+            </form>
+        
+    </body>
+</html>

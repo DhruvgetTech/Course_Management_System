@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    
+    <head>
+        <style type="text/css">
+         .bartheme
+        {
+            font-size:20px;
+            border-radius:30px;
+            background-color:rgba(255,255,255,0.5);
+            border:solid;
+            border-color:blue;
+            
+        }
+          .btntheme
+        {
+            width:100px;
+            height:30px;
+            border-radius:30px;
+            border-color:orange;
+            font-size:20px;
+            background-color:white;
+            color:black;
+        }
+         .texttheme
+        {
+            width:250px;
+            height:30px;
+            border-radius:30px;
+            border-color:blue;
+        }
+        </style>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <script src="js/cities.js"></script>
+    </head>
+    <body  background="exam.jpg">
+       
+        <form action="Register" method="post">
+            <table align="center" cellspacing='15' class='bartheme'>
+                 <tr align='center' bgcolor='skyblue' stlye='border-radius:30px'>
+                    <td colspan="2" style="border-radius:30px"> User Registration</td>   
+                </tr>
+                <tr>
+                    <td>
+        Name <input type="text" name="name" class="texttheme">
+                    </td>
+                </tr>
+        <tr>
+                    <td>
+        Mail-Id <input type="email" name="email" class="texttheme">
+         </td>
+                </tr>
+        <tr>
+                    <td>
+        Mobile No <input type="text" pattern="[6789][0-9]{9}" name="mob" class="texttheme" >
+         </td>
+                </tr>
+        <tr>
+                    <td>
+        Password <input type="password" id="pwd1" name="pwd" class="texttheme" >
+         </td>
+                </tr>
+        <tr>
+                    <td>
+        Confirm Password <input type="password" id="pwd2" placeholder="Enter Confirm password" class="texttheme"><span id="one" style="color:red"></span>
+         </td>
+                </tr>
+         <tr>
+             <td>
+                 Gender : <input type="radio" name="gen" value="Male">Male
+                 <input type="radio" name="gen" value="Female">Female      
+             </td>
+         </tr>
+          <tr>
+             <td>
+                 <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>
+                <select id ="state" name="ct" class="form-control" required></select>
+                <script language="javascript">print_state("sts");</script>  
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 College Name <input type="text" name="clg" class="texttheme" >
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 Pursue Degree <select name="degree"> <option> B.Tech</option><option> Bsc</option> <option> BE</option> <option>BCA</option></select>
+             </td>
+         </tr>
+         <tr align="center">
+             <td>
+              <input type="submit" value="Register" class="btntheme" style="color:red" onclick="return valid()">
+              <td>
+              </tr>
+               </td>
+                </tr>
+               </table>    
+        </form>
+        
+        <script>
+            function valid()
+            {
+               pwd1=document.getElementById("pwd1").value; 
+               pwd2=document.getElementById("pwd2").value; 
+           
+        if(pwd1===pwd2)
+        {
+            return true;
+        }
+        else
+        {
+            //alert("pls check pwd and confirm pwd");
+            
+            document.getElementById("one").innerHTML="password and confirm password not match";
+            return false;
+        }
+    }
+            </script>
+    </body>
+</html>

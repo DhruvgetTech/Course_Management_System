@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <style type="text/css">
+            
+            .btntheme
+        {
+            width:100px;
+            height:30px;
+            border-radius:30px;
+            border-color:orange;
+            font-size:20px;
+            background-color:white;
+            color:black;
+        }
+        .texttheme
+        {
+            width:250px;
+            height:30px;
+            border-radius:30px;
+            border-color:black;
+        }
+        .title
+        {
+            font-size:50px;
+            font-family:arial;
+            color:black;
+        }
+        .bartheme
+        {
+            font-size:20px;
+            border-radius:30px;
+            background-color:rgba(255,255,255,0.5);
+            border:solid;
+            border-color:blue;
+        }
+        .navigation
+        {
+            color:white;
+            font-size:20px;
+            font-family:arial;
+            width:20px;
+            height:60px;
+        }
+        .navigation:hover
+        {
+            background-color:blue;       
+            border-radius:30px;
+        }
+         a
+        {
+            color:white;
+            text-decoration:none;
+        }
+            
+           
+
+        </style>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body background="exam.jpg">
+    
+        
+        <form action="CheckLogin" method="post">  
+            <table align="center" cellspacing='30' class='bartheme'>
+                <tr align='center' bgcolor='sky blue' stlye='border-radius:30px'>
+                    <td colspan="2" style="color:yellow" style="border-radius:30px"> Course Management System</td>   
+                </tr> 
+                <tr align="center">
+                <td style='font-size:20px;color:black'>Email-Id</td>
+                </tr>
+                    <tr align="center">
+                        <td><input type="email" name="email" class='texttheme' placeholder=" Enter Email"></td>
+                </tr>
+                <tr align="center">
+                 <td style='font-size:20px;color:black'>Password</td>
+                 </tr>
+                <tr align="center">
+                    <td><input type="password" name="pwd" class ='texttheme' placeholder=" Enter Password Here"><br><a href="forget.html" style="color:red" >Forgot password</a></td>
+                 
+                   </tr>
+                  <tr align="center">
+                 <td colspan="2">
+                    <input type="submit" value="Login" class='btntheme' >
+                 
+                    <a href="register.html" style="color:lightcoral" > Click if not Register</a>
+                 </td>
+                 
+             </tr>
+             <tr>
+                 <td>
+                     <a href="faculty_login.html" style="color:green" > Faculty Login </a>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <a href="admin_login.html" style="color:lightcoral" > Admin </a>
+                 </td>
+                 
+             </tr>
+                              
+                     
+                 
+             
+             </table>
+            </form>
+       
+    </body>
+</html>
